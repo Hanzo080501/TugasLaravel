@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --transition-duration: 0.5s;
+  --transition-timing-function: ease-in-out;
+}
+
+body {
+  transition: background-color var(--transition-duration) var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function) !important;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
